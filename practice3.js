@@ -36,3 +36,13 @@ document.getElementById('b-center').addEventListener('click',function(){
         textAreaText.style.textAlign = 'center'
     }
 });
+const fontSizeSelect = document.getElementById("font-size"); 
+fontSizeSelect.addEventListener("change", function () {
+    const fontValue = fontSizeSelect.value;
+    textAreaText.style.fontSize = fontValue;
+});
+
+document.getElementById("font-size1").addEventListener("change", function (e) {
+    const fontValue = e.target.value;
+    textAreaText.style.fontSize = fontValue+'px';
+});
